@@ -1,4 +1,4 @@
-const serverPORT = "http://localhost:3000";
+const serverPORT = "https://chat-app-by-vandt.herokuapp.com/";
 
 var socket = io(serverPORT);
 
