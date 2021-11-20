@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="login-form">
+      <h3>Enter your name</h3>
+      <input type="text" id="username" placeholder="Username"/>
+      <button id="regis-btn">Register</button>
+    </div>
+    <div class="chat-form">
+      <div class="list-friend">
+        <div class="box-title">User Online...</div>
+        <div class="box-content">
+        </div>
+      </div>
+      <div class="chat-area">
+        <div class="welcome">
+          Hello <span id="currentUser" style="color:red;;font-weight:bold;"></span>
+          <button id="logout-btn">Log Out</button>
+        </div>
+        <div class="listMessages">
+          <div id="noti"></div>
+        </div>
+        <input type="text" id="text-message"/>
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src='socket.io/socket.io.js'></script>
+  <script src='handle.js'></script>
+</body>
+</html>
